@@ -1,0 +1,15 @@
+<package>
+  <name>cspacevoroandrea</name>
+  <version>0.0.1</version>
+  <description>cspacevoroandrea</description>
+  <maintainer email="cs@informatik.uni-freiburg.de">C. Sprunk</maintainer>
+  <license>BSD</license>
+
+  <url>http://ros.org/wiki/cspacevoronoi</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+</package>
+
+
+
