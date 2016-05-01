@@ -188,7 +188,8 @@ void DStarSearch::processState(DStarSearchNode* n) {
         OrientationIntervals::computeOrientationDistanceInInterval(intersection,intersection.upper,middleOri,minUp);
         cellcost = maxOri+1 - 2*std::min(minLo,minUp);
       }
-      cellcost=1;//when not using cost of the cell
+//      cellcost=1;//when not using cost of the cell
+        if (cellcost>1) cellcost*=10;
 //for optimal path calculation      
 //      OrientationIntervals::computeClosestOrientationInSubinterval(ninterval, intersection, n->getDesiredOrientation(), closestOrientation, distance);
       minD = distance;
@@ -365,7 +366,8 @@ void DStarSearch::processState(DStarSearchNode* n) {
         OrientationIntervals::computeOrientationDistanceInInterval(intersection,intersection.upper,middleOri,minUp);
         cellcost = maxOri+1 - 2*std::min(minLo,minUp);
       }
-      cellcost=1;//when not using cost of the cell
+//      cellcost=1;//when not using cost of the cell
+        if (cellcost>1) cellcost*=10;
       }//for c<OBSTACLE
 
 //for optimal path calculation      
@@ -517,7 +519,8 @@ void DStarSearch::processState(DStarSearchNode* n) {
         OrientationIntervals::computeOrientationDistanceInInterval(intersection,intersection.upper,middleOri,minUp);
         cellcost = maxOri+1 - 2*std::min(minLo,minUp);
       }
-      cellcost=1;//when not using cost of the cell
+//      cellcost=1;//when not using cost of the cell
+        if (cellcost>1) cellcost*=10;
       }
 //for optimal path calculation      
 //      OrientationIntervals::computeClosestOrientationInSubinterval(ninterval, intersection, n->getDesiredOrientation(), closestOrientation, distance);

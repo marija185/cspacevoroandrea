@@ -13,7 +13,7 @@
 #include "OrientationIntervals.h"
 #include "OINodeConnector.h"
 
-#define DSTAR_EIGHT_CONNECTED 1
+//#define DSTAR_EIGHT_CONNECTED 1
 
 class OIDStarSearchNode: public DStarSearchNode {
 public:
